@@ -1,42 +1,106 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App {
+    width: 100vw;
+    height: 100vh;
+    color: var(--nav-font);
+    background-color: var(--bg);
+    transition: 0.25s;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+.App::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+/* Handle */
+.App::-webkit-scrollbar-thumb {
+    background: var(--sup-primary);
+}
+/* Handle on hover */
+.App::-webkit-scrollbar-thumb:hover {
+    background: var(--sup-active);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+div.container {
+    margin: auto;
+    padding-bottom: 60px;
+    width: 1200px;
+
+    & section {
+        margin-top: 50px;
+        padding-top: 50px;
+    }
 }
 
-.card {
-  padding: 2em;
+div.footer {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--footer);
+
+    & p {
+        font-family: var(--poppins-font);
+        font-size: 1.25rem;
+    }
 }
 
-.read-the-docs {
-  color: #888;
+section.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+
+    /* & h1 {
+        padding: 100px;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 5rem;
+    } */
 }
+
+div.head-topic {
+    padding-left: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: var(--comfortaa-font);
+    font-size: 3rem;
+    color: var(--sup-primary);
+    border-left: 2px solid var(--sup-primary);
+
+    & svg {
+        margin-left: 15px;
+    }
+}
+
+div.sub-topic {
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: var(--quicksand-font);
+    font-size: 2rem;
+}
+
+/* @media only screen and (max-width: 1800px) {
+    section.home-section {
+        display: flex;
+        justify-content: center;
+        & img {
+            width: auto;
+            height: 100vh;
+        }
+    }
+} */
