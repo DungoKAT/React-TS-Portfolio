@@ -1,69 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap");
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    /* Google Fonts */
+    --poppins-font: "Poppins", sans-serif;
+    --play-font: "Play", sans-serif;
+    --comfortaa-font: "Comfortaa", sans-serif;
+    --quicksand-font: "Quicksand", sans-serif;
+    --poppins-font: "Poppins", sans-serif;
+    --work-sans-font: "Work Sans", sans-serif;
+    --reem-kufi-fun-font: "Reem Kufi Fun", sans-serif;
+    --noto-sans-font: "Noto Sans Thai", sans-serif;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    /* Dark theme Color */
+    --bg: #101010;
+    --navbar-primary: #232524;
+    --navbar-secondary: #353535;
+    --nav-link-hover: #505050;
+    --nav-link-active: #ffa500;
+    --nav-font: #f6f5ff;
+    --footer: #1e1e1e;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+    --sup-primary: #ffa500;
+    --sup-secondary: #ffb833;
+    --sup-active: #ffd383;
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.light-theme {
+    --bg: #e7edff;
+    --navbar-primary: #fff;
+    --navbar-secondary: #ebe9ff;
+    --nav-link-hover: #dbdbdb;
+    --nav-link-active: #695cfe;
+    --nav-font: #303030;
+    --footer: #f3f6ff;
+
+    --sup-primary: #695cfe;
+    --sup-secondary: #646cff;
+    --sup-active: #9ba0ff;
 }
+
+/* body::-webkit-scrollbar {
+    width: 10px;
+} */
+/* 
+body::-webkit-scrollbar-track {
+    background: #181818;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #FFA500;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #ffd383; 
+}
+
+body.active::-webkit-scrollbar-track {
+    background: #e4e9f7;
+}
+
+body.active::-webkit-scrollbar-thumb {
+    background: #695cfe;
+}
+
+body.active::-webkit-scrollbar-thumb:hover {
+    background: #abafff; 
+} */
